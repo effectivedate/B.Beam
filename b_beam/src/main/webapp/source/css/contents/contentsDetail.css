@@ -1,0 +1,520 @@
+@charset "UTF-8";
+
+
+	/*------------------------------헤더----------------------------------------------- */	
+
+@font-face {
+		font-family: 'Pretendard-Regular';
+		src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	html,
+	body {
+		position: relative;
+		height: 100%;
+	}
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue,"Pretendard-Regular", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+	    width: 100%;
+	    height: 120px;
+	    position: relative;
+	    top: 0;
+	    z-index: 110;
+	    left: 0;
+	    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAACiCAYAAACgYdB1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAHqklEQVR4nO3ZQXLaMABAUdNj9jq9YS9EV82ExICxJZP5896qmSmSLYwt+Jfff/5elwPuv/jQsCfZdozvOZPzZr0uy3JZm/Gy5ZU/yfPjOXdVn3i6vkdmeed789rcu4/02/rNP+fvM5y9ztvvWR/Lc9nzjqzeEaa4njLPlzle+OxtP7rZ5zFppT7WYv/o73+SXlf+9aLVa+LYMT9+9az1WB9302wPPxfHro/1O8oPW4NJ539/hNHnf+C9X5bhn4Hz9ifXB3/tHO/F/dnzp+accx436spIK2vwrufh+Kffzrvz3eti5LOic61s20keX7vbeUau38F76n8791lnfKs949rbNfqB59Hs+9Tn71gz12/3fe/Fvczxb32jd7v735fRYy7LcrOeZ+xjR9+xv468/te4cceNv20vNuNqOfaKn/ndcfjz5MF7M+uK2DbSmOfiWXv62XPsemru/I36ffu+V165b75jtq3I3F9f5+ySN816+XxJnfPL7838g/7XOaMcH/3ZtfRrxOEAAAAAAAAA8H4CMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABECMAAAAAAAAECEAAwAAAAAAAAQIQADAAAAAAAARAjAAAAAAAAAABH/AKkKnnzerk4uAAAAAElFTkSuQmCC);
+		background-size: cover;
+		display: flex;
+	}
+	
+	.logo {
+		margin-left: 30px;
+	}
+	
+	.menu {
+		width: 100%;
+		display: inline-block;
+	}
+	
+	.depth1 {
+		width: 100%;
+		display: flex;
+		margin-top: 25px;
+		margin-left: 40px;
+	}
+	
+	li {
+	    margin: 0 2%;
+	    width: 150px;
+	    list-style: none;
+	    font-size: 20px;
+	    padding: 30px;
+	    margin: 0 auto;
+	}
+	
+	a:hover {
+		font-size: 120%;
+		font-weight: 120%;
+	}
+	
+	a {
+		text-decoration-line: none;
+		color: white;
+	}
+	
+	.loginbutton {
+		display: inline-block;
+	    padding: 50px;
+		background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: 50% 50% !important;
+	    border-radius: 100%;
+	}
+
+
+.container-title {
+		margin: 30px 0 0 60px;
+		font-size: 25px;
+		border-bottom: 4px solid;
+	}
+
+.container-title h1 {
+		margin-bottom: 0;
+	}
+
+.container {
+	position: relative;
+		width: 100%;
+		margin: 0;
+	}
+
+/* 타이틀, 즐겨찾기, 대표 이미지 및 작은 이미지 섹션 스타일 ------------------------*/
+.contentsdetail {
+	position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contents-visual{
+	width : 500px;
+	position : absolute;
+	top : -20px;
+}
+.title-section {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.title-section .view{
+	font-size : 15px;
+	margin : auto 0 auto auto;
+}
+.favorite {
+	cursor:pointer; 
+    margin: auto 20px auto 10px;
+}
+.favorite-icon.on{
+	color: rgb(255, 255, 0);
+	font-size: 25px;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	
+}
+.favorite-icon {
+	color: rgb(120, 120, 120);
+	font-size: 25px;
+	
+}
+/* 사진 영역  */
+.main-image-section {
+/* 	background-color : #eee; */
+}
+.main-image-section img {
+	width: 500px;
+	height: 450px;
+}
+.small-images-section {
+    display: flex; /* 가로 방향으로 이미지를 정렬합니다. */
+    max-width: 500px; /* 최대 너비 설정 */
+	overflow-x: auto; /* 가로 스크롤바가 필요한 경우 스크롤을 생성합니다. */
+	margin-bottom: 20px; /* 하단 여백 설정 */
+}
+.small-images-section img {
+	width: 80px;
+	height: 80px;
+    margin-right: 5px; /* 이미지 간 간격 설정 */
+}
+
+/* 탭 li 및 api 노출 영역 ------------------------*/
+.tabBox{
+	position: absolute;
+	left: 550px;
+	width: calc( 100% - 580px);
+}
+.info-tab{
+    position: relative;
+    display: flex;
+    text-align: center;
+    background: #567ff2;
+    border-radius: 7px;
+    box-shadow: 1px 2px 7px 1px rgb(48 50 51 / 54%);
+	margin:0;
+	padding: 0 10px;
+}
+
+.tab-content{
+	height: 500px;
+	width : 100%;
+	background-color: rgb(242, 242, 242);
+	justify-content: center;
+	text-align: center;
+}
+
+
+/* 댓글 입력 텍스트박스, 평가 셀렉트 박스, 완료 버튼, 사진업로드 -----------*/
+.reviewArea {
+	position: relative;
+	bottom: 50px;
+	height: auto;
+	max-width: 75%;
+   	margin: 20px auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.reviewArea p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.commentArea{
+	display: flex;
+}
+
+#ratingSelect {
+	height: 50px;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border-radius: 10px;
+}
+
+#commentInput {
+	height: 40px;
+    width:72%;
+    padding: 10px;
+    margin: 10px 5px;
+    resize: none;
+    border-radius: 10px;
+}
+.commentBtn{
+	background-color:rgb(88, 140, 237);
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+.commentCnt{
+	position: absolute;
+	width: 140px;
+	left: 76%;
+	top: 95px;
+	color: rgb(192, 192, 192);
+	font-size: 14px;
+}
+
+
+
+
+#imageUpload{
+	position: absolute;
+	bottom: 20px;
+}
+
+input[type="file"] {
+    display: none; /* 기본 파일 업로드 아이콘 숨김 */
+}
+/*이미지 업로드 버튼 디자인 변경*/
+.custom-image-upload-button {
+	position: absolute;
+	top: 130px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(202, 149, 149);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 이미지 미리보기 컨테이너 스타일 */
+.image-preview {
+	margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* 닫기 ('X') 버튼 스타일 */
+.remove-image-button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+ 
+ /*댓글 정렬 옵션  ---------------------------*/
+.commentArray {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.commentArray button {
+	font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    margin-left: 10px; /* 각 버튼 간격 조절 */
+}
+
+#cmtCnt{
+	font-size:18px;
+	color: rgb(136, 136, 136);
+}
+/* 댓글 출력 창 --------------------------------*/
+.commentReply{
+	bottom:100px;
+	max-width: 75%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+  .commentTable {
+    border-collapse: collapse;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px; /* Set the bottom margin to create a gap */
+    border-bottom:1px solid black;
+}
+.commentTable th, .commentTable td {
+  padding: 8px; /* 내부 콘텐츠와 테두리 사이 간격 설정 */
+}
+.star {
+	width: 80px;	
+}
+.day {
+	 color: rgb(172, 172, 172);
+	 text-align: left;
+}
+.userId {
+  width: 150px; /* 작성자 셀의 너비를 100px로 설정 */
+}
+.text {
+	text-align: left;
+  width: 1000px; /* 글내용 셀의 너비를 200px로 설정 */
+}
+
+.imageContainer img {
+   width: 140px; 
+    height: 100px;
+}
+.up{
+	width: 30px;
+}
+
+.optBtn{
+	border: none;
+	font-weight: bold;
+}
+
+
+.like-button {
+   cursor: pointer;
+   background: none;
+   border: none;
+   font-size: 20px;
+    }
+
+ .like-button i {
+      color: rgb(0, 0, 0);
+    }
+
+ .like-button.liked i {
+      color: red; /* 좋아요 누르면 색상 변경 */
+    }
+    
+ 
+    
+    
+    
+#cutLine{
+	width: 80%;
+}
+.tab-content table {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+}
+.tab-content tr {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.tab-content td {
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 16px!important;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    height: 20px;
+}
+.tab-content td a{
+	color : blue;
+}
+.tab-content h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+.tab-content p {
+    text-align: left;
+    font-size: 15px;
+    margin: 10px;
+}
+.mapwrap {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 288px;
+	height: 132px;
+	margin-left: -144px;
+	text-align: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+	line-height: 1.5;
+}
+.mapwrap * {
+	padding: 0;
+	margin: 0;
+}
+.mapwrap .info {
+	width: 286px;
+	height: 120px;
+	border-radius: 5px;
+	border-bottom: 2px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	background: #fff;
+}
+.mapwrap .info:nth-child(1) {
+	border: 0;
+	box-shadow: 0px 1px 2px #888;
+}
+.info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+.info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.info .close:hover {cursor: pointer;}
+.info .body {position: relative;overflow: hidden;}
+.info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
+.desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+.info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+.info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+.info .link {color: #5085BB;}
+
+
+.review-photo{
+    background: #ffffffd6;
+    box-shadow: 5px 5px 15px -5px rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+#modalWrap{
+	display:none;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: calc(120px + 5%) 5% 10%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(1px);
+    display: none;
+}
+#modalBody{
+	position: relative;
+	width: max(83%, 1000px);
+	height: 100%;
+	
+}
+.cont-img{
+	width: 100%;
+	height: 650px;
+	border: 0;
+	object-fit: cover;
+}
+#closeBtn {
+	position: absolute;
+	top: -40px;
+	right: -30px;
+	display: block;
+	font-weight: bold;
+	color: white;
+	font-size:40px;
+	cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 65%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+}
+.swiper-slide img {
+	display: block;
+	object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+}
+
+.contents-area{
+	display: flex;
+	width: 100%;
+	height: 700px;	
+	padding: 0;
+	border: 0;
+	border-radius: 8px;
+}
+
+

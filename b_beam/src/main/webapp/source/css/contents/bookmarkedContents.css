@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+.page-inner{	
+	width: 90%;
+	margin: 50px auto;
+}
+.page-side{
+	width: 100%;
+	margin: 0 auto;	
+}
+.page-title{
+	font-size: 30px;
+}
+.contents-area{
+	margin-top: 20px;
+	width: 100%;
+}
+
+.btn-area{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+	/*grid-auto-rows: minmax(40px, auto);*/
+	gap: 10px 20px;
+}
+
+.btn1{
+	width: 100%;
+	height: 40px;
+	color: #000;
+	font-size: 1.25em;
+	font-weight: bold;
+	border: 0;
+	border-radius: 8px;
+	box-shadow: 5px 5px 15px -5px #333;
+}
+
+.btn1:hover{
+	transform: scale(1.05);
+}
+
+.clicked{
+	color: #fff;
+	background-color: #5486C9;
+}
+/* 컨텐츠 상세보기 스타일 */
+.contentsdetail {
+    max-width: 70%;
+    height: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 타이틀, 즐겨찾기, 대표 이미지 및 작은 이미지 섹션 스타일 */
+.title-section {
+	position: relative;
+	bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.favorite {
+	position: relative;
+	bottom: 80px;
+	left: 380px;
+    margin-bottom: 20px;
+}
+/* 사진 영역  */
+.main-image-section {
+    position: relative;
+    bottom: 100px;
+}
+
+.main-image-section img {
+	width: 450px;
+	height: 550px;
+}
+
+.small-images-section {
+	position: relative;
+	bottom: 80px;
+    display: flex; /* 가로 방향으로 이미지를 정렬합니다. */
+     max-width: 450px; /* 최대 너비 설정 */
+  overflow-x: auto; /* 가로 스크롤바가 필요한 경우 스크롤을 생성합니다. */
+  margin-bottom: 20px; /* 하단 여백 설정 */
+}
+
+.small-images-section img {
+	width: 100px;
+	height: 150px;
+    margin-right: 10px; /* 이미지 간 간격 설정 */
+}
+/*끝*/
+.tab-content{
+	max-width: 700px;
+	height: 380px;
+	list-style: none;
+	padding: 0;
+	background-color: rgb(192, 192, 192);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 50px;
+	overflow: auto;
+}
+.bookmarked{
+    background: white;
+    margin-top: 20px;
+    padding : 20px;
+    border-radius : 10px;
+	
+}
+.bookmarkedContents{
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 20px;
+	min-width: 1100px;
+	border-radius: 10px;
+}
+.bookmarked-title{
+	font-weight:700;
+	font-size: 18px;
+}
+.bookmarked-cnt{
+	color:#0072de;
+}
+.bookmarked-data {
+	margin-top : 30px;
+    position: relative;
+}
+.contents-map {
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    right: 0;
+    width: 60%;
+}
+.bookmarked-list {
+    width: calc(40% - 34px);
+    overflow:auto;
+}
+.bookmarked-list::-webkit-scrollbar{
+	width:auto;
+}
+.bookmarked-list::-webkit-scrollbar-thumb{
+    background-color: #0072de;
+    border-radius: 10px;
+}
+.bookmarked-list::-webkit-scrollbar-track{
+    background-color: #eee;
+    border-radius: 10px;
+}
+.bookmarked-list ul{
+    height: 800px;
+    padding-left: 10px;
+}
+.bookmarked-list li{
+	margin:0;
+	min-width : 300px;
+    border-bottom: 1px solid #ddd;
+    padding : 10px 40px 10px 20px;
+    position:relative;
+}
+.bookmarked-list .detailview{
+    padding: 10px 40px 10px 20px;
+    position: relative;
+    display: flex;
+}
+
+.detailimage{
+    position: relative;
+    left: -10px;
+    top: -2px;
+}
+.detailimage img{
+	width: 150px;
+	height: 150px;
+	border-radius:10px;
+}
+.contenttype_label{
+    color: #0072de;
+    background-color: #f7f7f7;
+    display: block;
+    height: 20px;
+    padding: 5px 12px;
+    border-radius: 24px;
+    line-height: 1;
+    font-size: 0;
+    text-align: center;
+}
+.contenttype_label span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+.detail-btn{
+    margin: 20px;
+    width: 100px;
+    position: absolute;
+    left: 250px;
+    bottom: 5px;
+}
+.detail-btn .btn{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #0072de;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px #333;
+}
+.detail-btn2{
+    margin: 20px;
+    width: 100px;
+    position: absolute;
+    left: 146px;
+    bottom: 5px;
+}
+.detail-btn2 .btn{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #d20000;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px #333;
+}
+.list-btn{
+    width: 70px;
+	display:inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+
+}
+.list-btn .btn{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #0072de;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px #333;
+}
+.marker{
+    font-style: normal;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 20px;
+    height: 27px;
+    background: url(../../images/list_marker.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 20px 27px;
+}
+
+.container .tab li.is_on .btn{
+	color: white;
+}
+
+.mapwrap {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 288px;
+	height: 132px;
+	margin-left: -144px;
+	text-align: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+	line-height: 1.5;
+}
+.mapwrap * {
+	padding: 0;
+	margin: 0;
+}
+.mapwrap .info {
+	width: 286px;
+	height: 120px;
+	border-radius: 5px;
+	border-bottom: 2px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	background: #fff;
+}
+.mapwrap .info:nth-child(1) {
+	border: 0;
+	box-shadow: 0px 1px 2px #888;
+}
+.info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
+.info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
+.info .close:hover {cursor: pointer;}
+.info .body {position: relative;overflow: hidden;}
+.info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
+.desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+.info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+.info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+.info .link {color: #5085BB;}
+
+
+
+

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+
+.contentsbutton {
+    width: 150px; /* 가로 너비 */
+    height: 250px; /* 세로 높이 */
+    border: none; /* 테두리 없음 */
+    color: white; /* 버튼 텍스트 색상 */
+    background: linear-gradient(to bottom, rgb(255, 128, 64), rgb(0, 179, 89));
+    text-align: center; /* 텍스트 중앙 정렬 */
+    font-size: 18px; /* 텍스트 크기 */
+    border-radius: 20px; /* 모서리 둥글게 설정 */
+    margin: 0 30px; /* 좌우 여백 10px로 설정 (상하 여백은 0) */
+}
+
+
+
+/* 페이지 네비게이션 스타일 */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 화살표 스타일 */
+.arrow {
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(79, 171, 247); /* 화살표 색상 */
+}
+
+/* 페이지 번호 스타일 */
+.page {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000; /* 페이지 번호 색상 */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 가로 중앙 정렬을 위한 추가 */
+    margin-top: 10px;
+    padding: 0px 0; /* 위 아래 여백 조절 */
+}
+
+#keyword {
+    width: 500px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    background-color: rgb(79, 171, 247);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+    .contentsbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listbutton {
+        width: 250px;
+        height: auto;
+        border: none;
+        text-align: center;
+        margin: 30px;
+    }
+	
+    .contents-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contents-info img {
+        width: 250px;
+        height: 200px;
+        border-top-left-radius: 10px; /* 좌측 상단 모서리만 둥글게 */
+        border-bottom-left-radius: 0px; /* 좌측 하단 모서리만 둥글게 */
+        border-top-right-radius: 10px; /* 우측 상단 모서리는 각지게 유지 */
+        border-bottom-right-radius: 0; 
+    }
+
+ 
+
+  .contents-title {
+	  	width: 230px;
+        background-color: rgb(255, 255, 255); /* 뒷 배경 색상 */
+        color: rgb(0, 0, 0); /* 글자 색상 */
+        padding: 10px; /* 내용과 외곽선 간격 조절 */
+        border-top-left-radius: 0px; /* 좌측 상단 모서리는 각지게 유지 */
+        border-bottom-left-radius: 10px; /* 좌측 하단 모서리는 각지게 유지 */
+        border-top-right-radius: 0px; /* 우측 상단 모서리만 둥글게 */
+        border-bottom-right-radius: 10px; /* 우측 하단 모서리만 둥글게 */
+    }
+
+	.rankingbox{
+		display : flex;
+		border : 2px solid #ebebeb;
+		margin-top : 50px;
+	}
+	
+	.ranktitle{
+	    position: relative;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+	    height: 45px;
+	    margin-top: -1px;		
+	    background-color: #5684cd;
+	    color: white;	
+        border-radius: 10px; /* 우측 하단 모서리만 둥글게 */
+	}
+	.contentsbox.rank{
+	    padding: 10px;
+	    border: 3px solid #ebebeb;
+	    border-radius: 10px;
+	    background-color: #bdbdbd;
+    	transition: all 0.2s linear;
+	}
+	.contentsbox.rank:hover{
+		transform:scale(1.03)
+	}
+	.listbutton.rank{
+		margin : 10px;
+		border-radius : 10px;
+		width : 200px;
+    	transition: all 0.2s linear;
+	}
+	.listbutton.rank:hover{
+		transform:scale(1.1)
+	}
+	.rankcontainer{
+	    width: 1190px;
+	    margin: 0 auto;
+	    padding-bottom:50px;
+	}
+	.contents-info.rank{
+		width: auto;
+	}
+
+	.contents-info.rank img{
+		width: 200px;
+		height : 160px;
+	}
+
+  .contents-title.rank {
+	  	width: 180px;
+        background-color: rgb(255, 255, 255); /* 뒷 배경 색상 */
+        color: rgb(0, 0, 0); /* 글자 색상 */
+        padding: 10px; /* 내용과 외곽선 간격 조절 */
+    }
+.cvrk{
+	color: rgb(255, 128, 64);
+	font-weight : bold;
+}
+.rcrk{
+	color: darkgray;
+	font-weight : bold;
+}
+.bcrk{
+	color: #bf9000;
+	font-weight : bold;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+	
+	h1 {
+		margin-bottom: 0;
+	}
+	
+	.gallery {
+		margin: 30px 0 0 60px;
+		position: relative;
+		font-size: 25px;
+		border-bottom: 4px solid;
+	}
+	
+	.container	{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.table-cont {
+		border: 1px solid white;
+		background: white;
+		box-shadow: 5px 5px 15px -5px #333;
+		width: 500px;
+		height: 100%;
+		border-radius: 4px;
+		margin-top: 12px;
+	}
+	
+	.wrap-table {
+		margin-top: 50px;
+	}
+	
+	.inner-table {
+		padding: 80px;
+		transition: all 0.2s linear;
+	}
+	
+	#input-bdtitle {
+		width: 99%;
+		height: 30px;
+		border: 0;
+		border-bottom: 1px solid;
+		font-size: 15px;
+	}
+
+	#input-bdcont {
+		width: 99%;
+		height: 100%;
+		border: 0;
+		border-bottom: 1px solid;
+		resize: none;
+		font-size: 15px;
+	}
+	
+	#input-bdtitle:focus {
+		outline: none;
+	}
+	
+	#input-bdcont:focus {
+		outline: none;
+	}
+	
+	label {
+		padding: 15px 218px;
+		background-color:#567ff2;
+		border-radius: 3px;
+		color: white;
+		cursor: pointer;
+		font-size: 15px;
+	}
+	
+	label:hover {
+		background: #1d3477;
+		box-shadow: 4px 2px 4px 0px rgba(27, 13, 75, 0.62);
+		transition: 0.3s;
+	}
+	
+	#back-btn {
+		padding:12px 25px;
+	}
+	
+	.write-btn {
+		    margin: 25px 0 20px 0;
+	}
+	
+	#write-label {
+		padding:15px 226px
+	}
+	
+	/*이미지 첨부*/
+	
+	.file {
+		display: none;
+	}
+	
+	.upload-box {
+		width: 100%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.upload-box .drag-file {
+		position: relative;
+		width: 97%;
+		height: 360px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 3px dashed #dbdbdb;
+		border-radius: 8px;
+	}
+	.upload-box .drag-file.highlight {
+		border: 3px dashed red;
+	}
+	.upload-box .drag-file .image {
+		width: 40px;
+	}
+	.upload-box .drag-file .message {
+		margin-bottom: 0;
+	}
+	.upload-box .drag-file .preview {
+		display: none;
+		position: absolute;
+		left: 0;
+		height: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	.upload-btn {
+		margin: 25px 0 5px 0;
+	}
+	/* 미리보기 이미지 영역 */
+	#previews {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+		position: absolute;
+	}
+
+	#previews img {
+		width: 97%;
+		height: 100%;
+		margin: 5px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		object-fit: cover; 
+	}
+	
+	.upload-box .drag-file.image-added .message,
+	.upload-box .drag-file.image-added .image {
+		display: none;
+	}
+	
+	/* 스크롤 */
+	.previews::-webkit-scrollbar{
+	width:10px;
+	}
+	.previews::-webkit-scrollbar-thumb{
+		background-color: #0072de;
+		border-radius: 4px;
+	}
+	.previews::-webkit-scrollbar-track{
+		background-color: #eee;
+		border-radius: 4px;
+	}
+	
